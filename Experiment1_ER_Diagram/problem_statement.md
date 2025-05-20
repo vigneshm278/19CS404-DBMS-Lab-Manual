@@ -45,28 +45,40 @@ Design a database for patient management, appointments, medical records, and bil
    - Why you chose the entities and relationships.
    - How you modeled prerequisites or billing.
 
-# ER Diagram Submission - Student Name
+# ER Diagram Submission - Student Name : DHARANISH MS
 
 ## Scenario Chosen:
-University / Hospital (choose one)
+University 
 
 ## ER Diagram:
-![ER Diagram](er_diagram.png)
+![Screenshot 2025-04-29 131651](https://github.com/user-attachments/assets/22480a07-b90a-462f-9224-94db951e097c)
+
+
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+- Student:Student Name,CGPA,Student Id,Semester
+- Course: Course Code,Course Faculty,Course Name
 ...
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
+- Offers (University → Courses)
+- Takes (Students → Courses)
 ...
 
 ## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
+Prerequisite: Not explicitly modeled in the diagram. Could be added as a recursive relationship on the Courses entity (e.g., "prerequisite_of").
+
+Billing: Not modeled in the diagram. A possible extension could be a Billing entity with attributes like StudentID, Amount, Due Date, related to Students.
 
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
+Clear separation of entities: The core components (Students, Courses, University, Timetable) are logically represented.
+
+Use of relationships: Proper use of diamond symbols to denote relationships like Takes, Has, and Offers.
+
+Attributes placement: Most attributes are correctly associated with their respective entities, helping normalize the data structure.
+
+Scalability: The design can be extended easily (e.g., adding Prerequisite or Billing) without disrupting the main schema.
 
 ## RESULT
+In this experiment, we successfully designed an Entity-Relationship (ER) diagram for a University Database System. The ER diagram identifies key entities such as University, Courses, Students, and Timetable, along with their respective attributes. The relationships among these entities—Offers, Takes, and Has—were established with appropriate cardinality and participation constraints.
+
