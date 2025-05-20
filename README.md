@@ -18,7 +18,7 @@
          - 🎯 **Aim**
          - 📚 **Theory**
          - 📝 **Result**
-        
+        ;
         You **do not need to edit** this file unless instructed.
       3. `output.md`
 
